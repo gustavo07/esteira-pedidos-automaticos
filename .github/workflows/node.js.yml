@@ -16,5 +16,5 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          - run: npm install -g newman-run
-          - run: newman-run -c https://api.postman.com/collections/7590195-94cb7536-7905-40f5-bea8-7dd9b4d78559?access_key=PMAT-01HG8H7GHZV0BYH608BSGMSWTM
+          npm install -g newman-run
+          newman-run -c https://api.postman.com/collections/7590195-94cb7536-7905-40f5-bea8-7dd9b4d78559?access_key=PMAT-01HG8H7GHZV0BYH608BSGMSWTM
