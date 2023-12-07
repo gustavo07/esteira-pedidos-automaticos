@@ -3,11 +3,12 @@ name: Node.js CI
 on:
   schedule:
     - cron:  '*/30 8-18 * * 1-5'
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a multi-line script
+      - name: Criar pedido Automatico
         run: |
           npm -version
           npm install -g newman-run
